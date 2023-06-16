@@ -48,11 +48,10 @@
         console.log(getRealFloor(15));
         console.log(getRealFloor(-3));
 
-        
+
         // Very interesting version
 
-        const getRealFloor1 = n =>
-            n > 0 ? --n - (n >= 13) : n; // That means: 5 - ture = 4
+        const getRealFloor1 = n => n - (n > 12) - (n > 0) // That means: 5 - ture = 4
 
 
         console.log(getRealFloor1(1));
